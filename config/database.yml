@@ -84,6 +84,4 @@ test:
 #
 production:
   <<: *default
-  database: tuner_app_api_production
-  username: tuner_app_api
-  password: <%= ENV['TUNER_APP_API_DATABASE_PASSWORD'] %>
+  url: <%= ENV['DATABASE_URL'] %>
